@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>GIT Desktop and Account</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<style>
+			.questions_container {
+				margin-top: 50px;
+			}
+		</style>
+
+		<script>
+			function hideIT() {
+				const FormContainer = document.getElementById("formContainer");
+				const ThanksBox = document.getElementById("ThanksBox");
+
+				FormContainer.style.display = "none";
+
+				ThanksBox.style.display = "block";
+
+				ThanksBox.style.textAlign = "center";
+			}
+		</script>
+	</head>
+	<body>
+		<table
+			class="table table-hover table-borderless text-center"
+			style="overflow: scroll"
+		>
+			<thead>
+				<tr class="bg-info shadow text-white" style="border-radius: 5px">
+					<th>Email</th>
+
+					<th>Status</th>
+					<th class="text-center">Confirmation</th>
+				</tr>
+			</thead>
+			<tbody id="applications" style="max-height: 400px">
+				<tr id="leave3">
+					<td>john123@gmail.com</td>
+
+					<td class="leaveStatus cc_cursor">Approved</td>
+					<td class="text-center">
+						<button
+							class="br_1 shadow btn btn-sm btn-info"
+						>
+							View Application
+						</button>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</body>
+</html>
