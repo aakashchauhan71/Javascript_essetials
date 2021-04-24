@@ -214,7 +214,19 @@ img{ max-width:100%;}
 
 				for (msg of msgs) {
 					document.getElementById("msgsContainer").innerHTML += `
-          
+          <div class="chat_list">
+          <div class="chat_people">
+            <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+            <div class="chat_ib">
+              <h5>
+              ${msg.name}
+               <span class="chat_date">Dec 25</span></h5>
+              <p>
+              ${msg.message}
+              .</p>
+            </div>
+          </div>
+        </div>
         
         
           `;
