@@ -1,3 +1,4 @@
 # Javascript_essetials
- Javascript 
- demo
+ Javascript
+
+ javascript is fun
