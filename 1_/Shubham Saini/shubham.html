@@ -1,12 +1,37 @@
-<!DOCTYPE html>
+<!DDOCTYPE html>
 <html lang="en">
    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>GIT Desktop and Account</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+         body {
+            margin-top: 50px;
+            text-align: center;
+         }
+      </style>
+      <script>
+         var user = [
+            {
+               userId: 1,
+               name: "Shubham",
+            },
+            {
+               userId: 2,
+               name: "Saini",
+            },
+         ];
+         function loadData() {
+            for (user of user) {
+               document.getElementById("shub").innerHTML += `
+               ${user.name}
+               `;
+            }
+         }
+      </script>
    </head>
    <body>
-      <h1>Shubham Saini</h1>
+      <button class="button-data" onclick="loadData()">Show User</button>
+      <h1 id="shub"></h1>
    </body>
 </html>
