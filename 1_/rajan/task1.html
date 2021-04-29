@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <style>
+        .btn {
+            width: fit-content;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 2px solid rgb(92, 200, 243);
+            color: white;
+            background-color: rgb(92, 200, 243);
+        }
+        
+        .btn2 {
+            background-color: red;
+            border-radius: 5px;
+            border: 2px solid red;
+            display: none;
+            margin: auto;
+        }
+        
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn1 btn" onclick="addButton()">Hello</button>
+        <br> <br>
+        <button class="btn2 btn">Hello World</button>
+    </div>
+
+    <script>
+        function addButton() {
+            document.getElementsByClassName("btn2")[0].style.display = "block";
+
+        }
+    </script>
+
+</body>
+
+</html>
