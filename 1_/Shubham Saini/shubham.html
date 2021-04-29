@@ -15,23 +15,26 @@
             {
                userId: 1,
                name: "Shubham",
+               para: "Saini",
             },
             {
                userId: 2,
-               name: "Saini",
+               name: "Rohit",
+               para: "Wadhva",
             },
          ];
          function loadData() {
             for (user of user) {
                document.getElementById("shub").innerHTML += `
-               ${user.name}
+               <h1 style="color: red">${user.name}</h1>
+               <h2 style="color: green">${user.para}</h2>
                `;
             }
          }
       </script>
    </head>
    <body>
-      <button class="button-data" onclick="loadData()">Show User</button>
-      <h1 id="shub"></h1>
+      <button class="button-data" onclick="loadData()">Hello</button>
+      <h2 id="shub"></h2>
    </body>
 </html>
