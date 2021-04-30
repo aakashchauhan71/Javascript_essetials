@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Button</title>
+        <style></style>
+        <!-- creating a new button here  -->
+        <script>
+            function nxtbtn() {
+                var btnnn = document.getElementById("btnn");
+                var bttn = document.createElement("BUTTON");
+                bttn.innerHTML = "new button";
+
+                document.body.appendChild(bttn);
+                // btnnn.style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="btn">
+            <button id="btnn" onclick="nxtbtn();">Hello</button>
+        </div>
+    </body>
+</html>
