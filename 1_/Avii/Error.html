@@ -231,70 +231,49 @@
 
 	<script>
 		function loadData() {
-			let data1;
-			let data2;
+			// debugger;
+			let posts;
+			let users;
 			$.ajax("https://jsonplaceholder.typicode.com/posts", {
-				dataType: "json", // type of response data
-				timeout: 2000, // timeout milliseconds
+				dataType: "json",
+				timeout: 2000,
 				success: function (data, status, xhr) {
-					data1 = data;// success callback function
-					console.log(data1);
+					posts = data;
 				},
 				error: function (jqXhr, textStatus, errorMessage) {
-					// error callback
 					alert("Error");
 				},
 			});
 			$.ajax("https://jsonplaceholder.typicode.com/users", {
-				dataType: "json", // type of response data
-				timeout: 2000, // timeout milliseconds
+				dataType: "json",
+				timeout: 2000,
 				success: function (data, status, xhr) {
-					data2 = data;// success callback function
+					users = data;
 				},
 				error: function (jqXhr, textStatus, errorMessage) {
-					// error callback
 					alert("Error");
 				},
 			});
-			printData(data1, data2);
+			printData(posts, users);
 		}
 
-		function printData(data1, data2) {
-
-			document.getElementById("msgsContainer").innerHTML +=
-			 `<div class="chat_list">
-			          <div class="chat_people">
-			            <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-			            <div class="chat_ib">
-			`;
-
-			for (obj1 of data1) {
-				document.getElementById("msgsContainer").innerHTML +=
-				 `
-				 <h5>${obj1.name} <span class="chat_date">April 25</span></h5>				
-				`;
-			}
-			for (obj2 of data2) {
-
-				let msgClass = '';
-
-				if (obj2.userId % 2 == 0) {
-					msgClass = "text-primary";
-				}
-
-				if (obj2.body && obj2.body.length > 50) {
-					obj2.body = obj2.body.slice(0, 30);
-					obj2.body += "...";
-				}
-
-				document.getElementById("msgsContainer").innerHTML += 
+		function printData(posts, users) {
+			document.getElementById("msgsContainer").innerHTML =
 				`
-			              <p class="${msgClass}"> ${obj2.body}</p>
+				<div class="chat_list">
+			        <div class="chat_people">
+			            <div class="chat_img"> 
+							<img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
+						</div>
+			        <div class="chat_ib">
+					<h5>
+						${users[0].name} <span class="chat_date"> April 25 </span>
+					</h5>				
+			              <p class="text-primary"> ${posts[0].body}</p>
 			            </div>
 			          </div> 
 			        </div>
 			          `;
-			}
 		}
 	</script>
 
@@ -319,7 +298,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="msgsContainer" class="inbox_chat"></div>
+		<div id="msgsContainer" class="inbox_chat"> </div>
 	</div>
 </body>
 
