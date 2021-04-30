@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+    <div id="container">
+        <button onclick="newBtn()">Hello</button>
+    </div>
+    <script>
+        var i = 1;
+        function newBtn() {
+            document.getElementById('container').innerHTML+=
+            `
+            <br>
+            <button>New Button${i++}</button>
+            `;
+        }
+    </script>
+</body>
+
+</html>
