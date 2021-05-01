@@ -4,39 +4,34 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Task 1</title>
+   <title>Task 1 Cretae Dynamic Html with InnerHtml</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+   <style>
+      .bt1 {
+         margin: 15px 15px 15px 15px;git
+      }
+
+      .bt2 {
+         margin: 15px 15px 15px 15px;
+      }
+   </style>
+
 
    <script>
-      function myFunction() {
-         const Btn1 = document.getElementById('btn1');
-         const BtnShw = document.getElementById('BtnShw');
-
-         Btn1.style.display = "none";
-         BtnShw.style.display = "block";
-
-         BtnShw.style.display = "block";
-         git
-         BtnShw.style.textAlign = "center";
+      function showbtn() {
+         var btn = "<input type='button' class='btn btn-success bt2' value='TaskComplete'>";
+         document.getElementById('myfunction').innerHTML = btn;
       }
    </script>
 </head>
 
 <body>
-   <div id="btn1">
-      <button onclick="myFunction()" class="btn btn-info">Hello
-      </button>
-   </div>
-
-   <div id="BtnShw" style="display: none;">
-      <button class="btn btn-success">Show Btn
-      </button>
-   </div>
-
+   <input type="button" value="Hello" class="btn btn-info bt1" onclick="showbtn()">
+   <div id="myfunction"></div>
 </body>
 
 </html>
