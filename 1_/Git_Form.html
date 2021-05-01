@@ -1,47 +1,116 @@
 <!DOCTYPE html>
-<!-- Changes -->
-<!-- Again Mading Chagnes -->
-<!-- Third Time Mading Changes -->
-<!-- forth -->
 <html lang="en">
+<<<<<<< HEAD
+<<<<<<< HEAD=======>>>>>>> 8415a2d2540a8bfef08de2a1f9e39c2675c9fe5b
+=======
+<<<<<<< HEAD
+	<!--
+	<head>
+		<!-- new line 
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 2816a2d0daf4fb750083b9219a0b8b1c3d691282
 
 	<head>
-		<!-- new line -->
+>>>>>>> 8c18d5818873542ef1b91a423b31ac12e6284bf5
 		<title>GIT Desktop and Account</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-		/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<style>
 			.questions_container {
-				margin-top: 150px;
+				margin-top: 50px;
 			}
 		</style>
 
 		<script>
 			function hideIT() {
+<<<<<<< HEAD
+				const FormContainer = document.getElementById('formContainer');
+				const ThanksBox = document.getElementById('ThanksBox');
+
+=======
 				const FormContainer= document.getElementById('formContainer');
 				const ThanksBox= document.getElementById('ThanksBox');
-
+				ThanksBox.style.display = "block";
+>>>>>>> 2816a2d0daf4fb750083b9219a0b8b1c3d691282
 				FormContainer.style.display = "none";
-				ThanksBox.style.display="block";
-				ThanksBox.style.textAlign="center";
+				ThanksBox.style.display = "block";
+				ThanksBox.style.textAlign = "center";
 
-				
+				ThanksBox.style.display = "block";
+
+				ThanksBox.style.textAlign = "center";
 			}
-
-
-
-
-
 		</script>
 	</head>
 
+	<body>
+		<div id="formContainer" style="max-width: 700px; margin: auto">
+			<div class="p-4 mt-3 text-light bg-info">
+				<h3>Git Desktop and Account setup</h3>
+			</div>
+			<div class="questions_container"></div>
+			<div>
+				1. Have you downloaded Git Desktop App on your laptop?
+				<div class="ml-3">
+					<input type="radio" name="isGitDesktopDownloaded" /> Yes <br />
+					<input type="radio" name="isGitDesktopDownloaded" /> No <br />
+				</div>
+<<<<<<< HEAD
+			-->
+<head>
+	<title>GIT Desktop and Account</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		.questions_container {
+			margin-top: 150px;
+		}
+	</style>
+
+	<script>
+		function hideIT() {
+			const FormContainer = document.getElementById('formContainer');
+			const ThanksBox = document.getElementById('ThanksBox');
+			ThanksBox.style.display = "block";
+			FormContainer.style.display = "none";
+=======
+			</div>
+
+			<div class="mt-3">
+				3.Please enter your git account's email address 123
+>>>>>>> 8c18d5818873542ef1b91a423b31ac12e6284bf5
+
+				<br />
+				<input placeholder="Enter your email" class="form-control" />
+				=======
+
+<<<<<<< HEAD
+				<body>
+					<div id="formContainer" style="max-width: 700px; margin: auto">
+						<div class="p-4 mt-3 text-light bg-info">
+							<h3>Git Desktop and Account setup</h3>
+						</div>
+						<div class="questions_container"></div>
+						<div>
+							1. Have you downloaded Git Desktop App on your laptop?
+							<div class="ml-3">
+								<input type="radio" name="isGitDesktopDownloaded" /> Yes <br />
+								<input type="radio" name="isGitDesktopDownloaded" /> No <br />
+							</div>
+
+							<button onclick="hideIT()" class="btn mt-5 btn-info pl-3 pr-3">Submit</button>
+						</div>
+=======
 <body>
 	<div id="formContainer" style="max-width: 700px; margin: auto">
 		<div class="p-4 mt-3 text-light bg-info">
@@ -53,23 +122,17 @@
 			<div class="ml-3">
 				<input type="radio" name="isGitDesktopDownloaded" /> Yes <br />
 				<input type="radio" name="isGitDesktopDownloaded" /> No <br />
+<<<<<<< HEAD
+=======
+>>>>>>> 8415a2d2540a8bfef08de2a1f9e39c2675c9fe5b
+>>>>>>> 8c18d5818873542ef1b91a423b31ac12e6284bf5
 			</div>
-		</div>
+>>>>>>> 2816a2d0daf4fb750083b9219a0b8b1c3d691282
 
-		<div class="mt-3">
-			3.Please enter your git account's email address
-
-			<br />
-			<input placeholder="Enter your email" class="form-control" />
-		</div>
-
-		<button onclick="hideIT()" class="btn mt-5 btn-info pl-3 pr-3">Submit</button>
-	</div>
-
-	<div id="ThanksBox" style="max-width: 700px; display: none; margin: auto;">
-		<h1 class="text-info">Thanks!</h1>
-		<p>Your Response was submitted</p>
-	</div>
-</body>
+						<div id="ThanksBox" style="max-width: 700px; display: none; margin: auto;">
+							<h1 class="text-info">Thanks!</h1>
+							<p>Your Response was submitted</p>
+						</div>
+				</body>
 
 </html>
