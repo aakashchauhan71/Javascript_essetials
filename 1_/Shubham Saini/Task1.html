@@ -1,0 +1,39 @@
+<!DDOCTYPE html>
+<html lang="en">
+   <head>
+      <title>GIT Desktop and Account</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <style>
+         body {
+            margin-top: 50px;
+            text-align: center;
+         }
+         .btn-style {
+            border: 2px solid rgb(189, 221, 7);
+            color: white;
+            background-color: rgb(189, 221, 7);
+            border-radius: 6px;
+            font-size: 25px;
+         }
+         #btn2 {
+            display: none;
+            text-align: center;
+            margin: auto;
+         }
+      </style>
+      <script>
+         // please read the requiremenst again: creating dynamic html with innerHTML
+         function print() {
+            document.getElementById("btn2").style.display = "block";
+         }
+      </script>
+   </head>
+   <body>
+      <div>
+         <button class="btn-style" onclick="print()">Hello</button>
+         <br /><br />
+         <button class="btn-style" id="btn2">Task 1 Completed</button>
+      </div>
+   </body>
+</html>
