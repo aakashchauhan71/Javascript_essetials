@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <title>Task1</title>
+      <style>
+         body {
+            text-align: center;
+         }
+         .btn {
+            background-color: rgb(189, 221, 7);
+            border-radius: 6px;
+            font-size: 25px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="div1">
+         <button onclick="clicked()" class="btn">Hello</button><br /><br />
+      </div>
+   </body>
+   <script>
+      function clicked() {
+         const divBlock = document.getElementById("div1");
+         divBlock.innerHTML += "<button>Task 1 Completed</button>";
+      }
+   </script>
+</html>
