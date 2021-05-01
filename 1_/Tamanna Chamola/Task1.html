@@ -1,42 +1,14 @@
 <html>
-	<head>
-		<style>
-			body {
-				text-align: center;
-			}
-			.bt1 {
-				background-color: violet;
-				border: 1px solid violet;
-				border-radius: 3px;
-				width: 10%;
-				padding: 2%;
-			}
-			.bt2 {
-				background-color: yellowgreen;
-				border: 1px solid yellowgreen;
-				border-radius: 3px;
-				width: 20%;
-				padding: 2%;
-				display: none;
-				text-align: center;
-				margin: auto;
-			}
-		</style>
-		<script>
-			
-        // please read the requiremenst again: creating dynamic html with innerHTML
-			function hide() {
-				document.getElementsByClassName("bt2")[0].style.display =
-					"block";
-			}
-		</script>
-	</head>
+	<head> </head>
 	<body>
-		<div>
-			<button type="button" onclick="hide()" class="bt1">Hello!</button>
-			<br />
-			<br />
-			<button type="button" class="bt2">Task1 done</button>
-		</div>
+		<button onclick="dynamic()">Hello!</button>
+		<br />
+		<div id="div1"></div>
 	</body>
+	<script>
+		function dynamic() {
+			document.getElementById("div1").innerHTML =
+				"<button> Task 1 done </button> <br>";
+		}
+	</script>
 </html>
