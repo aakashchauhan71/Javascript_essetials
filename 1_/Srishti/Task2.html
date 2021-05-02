@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Click</title>
+        <style>
+            .pill {
+                display: inline-flex;
+                padding: 5px 20px;
+            }
+            #container {
+                text-align: center;
+            }
+        </style>
+        <script>
+            function activate(elem, s) {
+                elem.style.backgroundColor = "rgb(86, 45, 197)";
+                elem.innerHTML = s;
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="container">
+            <span>
+                <button
+                    onclick="activate(this,'CSS')"
+                    id="chip-a"
+                    class="mr-2 pill"
+                >
+                    CSS
+                </button>
+            </span>
+
+            <span>
+                <button
+                    onclick="activate(this,'Apps')"
+                    id="chip-a"
+                    class="mr-2 pill"
+                >
+                    Apps
+                </button>
+            </span>
+
+            <span>
+                <button
+                    onclick="activate(this,'Rxjs')"
+                    id="chip-a"
+                    class="mr-2 pill"
+                >
+                    Rxjs
+                </button>
+            </span>
+        </div>
+    </body>
+</html>
