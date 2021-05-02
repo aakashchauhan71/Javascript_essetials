@@ -31,6 +31,7 @@
 		}
 		#hello{
 			text-align: center;
+			background-color: blue;
 		}
 	</style>
 </head>
@@ -38,27 +39,45 @@
 <script type="text/javascript">
 		function Button() {
 			// body...
-			var CheckIt=document.getElementById('CheckIt');
-			var Show=document.getElementById('Show');
-			CheckIt.style.display="none";
-			Show.style.display="block";
+			//var CheckIt=document.getElementById('CheckIt');
+			var Show=document.getElementById('hello');
+			Show.innerHTML+="WELCOME !";
+			//CheckIt.style.display="none";
+			//Show.style.display="block";
 			Show.style.textAlign="center";
+			document.body.appendChild(hello);
 
 		}
-		function Button1(){
-			// body ...
-            var Show=document.getElementById('Show').innerHTML="welcome Again! ";
-
-		}
+		
+		
 	</script>
-	<center>
-	<button id="CheckIt" onclick="Button()">Hello</button>
-</center>
-<div id="hello">
-	<button id="Show"onclick="Button1()" style="max-width:1000px;display:none;text-align:center;margin:auto;color:white;background-color:skyblue; border:blue;
-	height:40px">Welcome</button>
+	<div id="hello">
+	<!--<button id="Show" style="max-width:1000px;display:none;text-align:center;margin:auto;color:white;background-color:skyblue; border:blue;
+	height:40px">Welcome</button>-->
 
 </div>
+<br>
+
+	<button id="CheckIt" onclick="Button()">Hello</button>
+
+
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
