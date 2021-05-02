@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color change on clock event </title>
+
+	<style type="text/css">
+		button{
+			background-color:blue;
+			color:white;
+			border-radius: 10px;
+			border:1px solid blue;
+			float: left;
+			width:100px;
+			height:40px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div>
+	<div>
+		<button id="First" onclick="Change(this,'css')">CSS</button>
+	</div>
+	<br>
+	<div>
+		<button id="First" onclick="Change(this,'html')">HTML</button>
+	</div>
+	<br>
+	<div>
+		<button id="First" onclick="Change(this,'javascript')">JAVASCRIPT</button>
+	</div>
+</div>
+</div>
+	<script type="text/javascript">
+		function  Change(button, one){
+	
+				button.style.backgroundColor = "pink";
+				button.innerHTML=one;
+			}
+	
+	</script>
+
+</body>
+</html>
