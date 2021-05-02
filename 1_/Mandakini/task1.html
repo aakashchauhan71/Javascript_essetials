@@ -1,6 +1,87 @@
 <!DOCTYPE html>
 <html>
-	<head>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Onclick Event</title>
+	
+		<style>
+
+		body{
+			justify-content: center;
+			align-items:center;
+			display: flex;
+			margin-top: 100px;
+
+			
+		}
+		#CheckIt{
+			background-color: deeppink;
+			color:blue;
+			border: 2px solid black;
+			max-width:500px;
+			height:30px;
+			border:blue;
+			margin: auto;
+			text-align:center;
+			border-radius: 10px;
+			
+
+		}
+		#hello{
+			text-align: center;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+
+		function Button() {
+			// body..
+		
+			var Show=document.getElementById('hello');
+			Show.innerHTML+="<button>WELCOME !</button>";
+			Show.style.textAlign="center";
+			document.body.appendChild(hello);
+			//document.write("<button>hello</button>");
+
+		}
+		
+		
+	</script>
+	
+	<div id="hello">
+
+
+</div>
+
+
+	<button id="CheckIt" onclick="Button()">Hello</button>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -70,3 +151,4 @@
 		</div>
 	</body>
 </html>
+-->
