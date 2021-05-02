@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.main button {
+				width: 70px;
+				padding: 5px;
+				margin: 10px;
+				border-radius: 6px;
+			}
+		</style>
+		<script>
+			function activate(element, user) {
+				element.style.backgroundColor = "pink";
+				element.innerHTML = user;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<button onclick="activate(this,'HTML')">click me</button>
+			<button onclick="activate(this,'Css')">click me</button>
+			<button onclick="activate(this,'Javascript')">click me</button>
+		</div>
+	</body>
+</html>
