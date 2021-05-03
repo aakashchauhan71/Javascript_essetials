@@ -10,39 +10,43 @@
 			integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
 			crossorigin="anonymous"
 		/>
-		<title>Task2</title>
+		<style>
+			.on {
+				background-color: teal;
+				color: white;
+				font-size: 25px;
+			}
+		</style>
+		<title>Task2WithToggle</title>
 	</head>
 	<body>
 		<div class="container">
 			<button
-				class="btn border border-info"
+				class="btn m-2 border border-info"
 				id="btn"
-				onclick="ColorChange(this,'Clicked')"
+				onclick="ColorChange(this)"
 			>
 				HTML
 			</button>
 			<button
-				class="btn border border-info"
+				class="btn m-2 border border-info"
 				id="btn "
-				onclick="ColorChange(this,'Clicked')"
+				onclick="ColorChange(this)"
 			>
 				CSS
 			</button>
 			<button
-				class="btn border border-info"
+				class="btn m-2 border border-info"
 				id="btn"
-				onclick="ColorChange(this , 'Clicked')"
+				onclick="ColorChange(this )"
 			>
 				JavaScript
 			</button>
 		</div>
 		<script>
-			
-            // CR: code looks fine
-			function ColorChange(btn, text) {
-				btn.style.backgroundColor = "teal";
-				btn.style.color = "white";
-				btn.textContent = text;
+			// CR: code looks fine
+			function ColorChange(btn) {
+				btn.classList.toggle("on");
 			}
 		</script>
 	</body>

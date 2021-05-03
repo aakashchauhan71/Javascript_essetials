@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         .divs {
+            text-align: center;
+         }
+         .divs button {
+            width: 70px;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 6px;
+         }
+      </style>
+      <script>
+         
+            // CR: code looks fine
+            
+            // CR: we can eliminate the need of getElementById by using 'this' keyword
+            // CR: we can reduce number of function by using 'this' keyword
+         function myFunction() {
+            document.getElementById("demo").style.backgroundColor = "red";
+         }
+         function myFunction2() {
+            document.getElementById("demo2").style.backgroundColor = "green";
+         }
+         function myFunction3() {
+            document.getElementById("demo3").style.backgroundColor = "yellow";
+         }
+      </script>
+   </head>
+   <body>
+      <div class="divs">
+         <h2>Background-color change using javascript</h2>
+         <button type="button" onclick="myFunction()" id="demo">Try it</button>
+         <button type="button" onclick="myFunction2()" id="demo2">
+            Try it
+         </button>
+         <button type="button" onclick="myFunction3()" id="demo3">
+            Try it
+         </button>
+      </div>
+   </body>
+</html>

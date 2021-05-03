@@ -1,0 +1,22 @@
+
+<html>
+
+<head>
+    <title>Task1</title>
+</head>
+<body>
+   <div id="container">
+       <button onclick="activate()">Hello</button>
+   </div>
+</body>
+<script>
+    var i=1;
+function activate(){
+document.getElementById("container").innerHTML+=`
+
+
+<button>Button${i++}</button>
+`;
+}
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Click</title>
+		<style>
+			.pill {
+				transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+				display: inline-flex;
+				padding: 5px 20px;
+				border-radius: 16px;
+				align-items: center;
+				cursor: pointer;
+				min-height: 32px;
+				margin: 10px;
+				background-color: #e0e0e0;
+			}
+		</style>
+		<script>
+			function activate(clickedElem, id) {
+				activeElem = document.getElementById("chip-" + id);
+				clickedElem.style.backgroundColor = "#3f51b5";
+				clickedElem.style.color = "white";
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="container">
+			<div>
+				<div onclick="activate(this,'a')" id="chip-a" class="mr-2 pill">
+					CSS
+				</div>
+				<div onclick="activate(this,'b')" id="chip-b" class="mr-2 pill">
+					Apps
+				</div>
+				<div onclick="activate(this,'c')" id="chip-c" class="mr-2 pill">
+					Rxjs
+				</div>
+			</div>
+		</div>
+		<script>
+			// code looks fine
+			var i = 1;
+			function newBtn() {
+				document.getElementById("container").innerHTML += `
+            <br>
+            <button>New Button${i++}</button>
+            `;
+			}
+		</script>
+	</body>
+</html>
