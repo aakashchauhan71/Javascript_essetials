@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Task2</title>
+    <style>
+        .base{
+            width: fit-content;
+            font-size: 120px;
+            border-radius: 5px;
+            border:2px solid rgb(red, green, blue);
+            color: "white";
+            background-color: 'white';
+            border-radius: 5px;
+        }
+
+        .main{
+            text-align: center;
+          
+        }
+
+        
+
+    </style>
+
+    <script>
+        function activate(item,st){
+            item.style.backgroundColor = "rgb(92, 200, 243)";
+            item.innerHTML=st;   
+        }
+    </script>
+     </head>
+   <body>
+       <div class="main">
+           <button onclick="activate(this,'After Click')">Click Here</button>
+           <button onclick="activate(this,'After Click')">Click Here</button>
+           <button onclick="activate(this,'After Click')">Click Here</button>
+       </div>
+   </body>
+
+</html>
