@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <h1>Sorting in JS</h1>
+
+        <p id="demo1"></p>
+        <button onclick="myfun()">Click here</button>
+        <p id="demo2"></p>
+        
+        
+        <script>
+            var fruits = ["Banana", "Orange", "Apple", "Mango",'Date','Pineapple'];
+            document.getElementById("demo1").innerHTML = "Original Array :<br> " + fruits +'<br>'+'<br>';
+            document.getElementById("demo1").innerHTML += "After sort() :<br> " + fruits.sort()+'<br>'+'<br>';
+            document.getElementById("demo1").innerHTML += "After reverse() :<br> " + fruits.reverse()+'<br>'+'<br>';
+            
+            var num=[12,32,45,67,1,6,8,9,4,5,3,33,23,56,78];
+            document.getElementById("demo2").innerHTML=num+'<br>'+'<br>';
+            function myfun(){
+          
+             num.sort(function(a,b){return a-b})
+             document.getElementById("demo2").innerHTML+=num; 
+            }
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+
+<html>
+<body>
+
+<h2>Data type</h2>
+
+<p id="demo"></p>
+
+<script>
+var laptop = ["HP","Model","2000"];
+
+document.getElementById("demo").innerHTML = laptop[0] +' ' +laptop[1]+' ' + laptop[2]+'<br>';
+
+var person = {
+  firstName : "Swati",
+  lastName  : "Kalyan",
+  age     : 23,
+  eyeColor  : "black"
+};
+
+document.getElementById("demo").innerHTML+=
+person.firstName + ' '+person.lastName+ " is " + person.age + " years old."+'<br>';
+
+document.getElementById("demo").innerHTML+='typeof person is:'+typeof person+'<br>';
+
+document.getElementById("demo").innerHTML+='typeof laptop is:'+typeof laptop;
+
+
+</script>
+
+</body>
+</html>

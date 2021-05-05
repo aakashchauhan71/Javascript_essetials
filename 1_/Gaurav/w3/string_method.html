@@ -1,0 +1,58 @@
+
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The <b>indexOf()</b> method returns the position of the first occurrence of a specified text:</p>
+<p>The <b>lastindexOf()</b> method returns the position of the last occurrence of a specified text:</p>
+<p>The <b>search()</b> method also returns the position of the first occurrence of a specified text:</p>
+<p>The <b>slice()</b> method takes the string starting and ending point and it also take -ve value:</p>
+<p>The <b>substring()</b> method takes the string starting and ending point and it can't take -ve value:</p>
+<p>The <b>substr()</b> method takes the string starting and length and it can take -ve value:</p>
+<p>The <b>replace()</b> method replace the position the first occurrence:</p>
+<p>The <b>string.charAt()</b> find the character at postion:</p>
+<p>The <b>string.charCodeAt()</b> find no of character at UTF-16 code:</p>
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+
+<script>
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+document.getElementById("demo").innerHTML = pos;
+
+//var str1= "Please locate where 'locate' occurs!";
+var pos = str .lastIndexOf("locate");
+document.getElementById("demo1").innerHTML += pos;
+
+var pos = str .search("locate");
+document.getElementById("demo2").innerHTML += pos;
+
+var pos = str .slice(6,13);
+document.getElementById("demo3").innerHTML += pos;
+
+var pos = str .substring(6,13);
+document.getElementById("demo4").innerHTML += pos;
+
+var pos = str .substr(7,6);
+document.getElementById("demo5").innerHTML += pos;
+
+var pos = str .replace('locate','LOCATE');
+document.getElementById("demo6").innerHTML += pos;
+
+document.getElementById("demo7").innerHTML += str.charAt(0);
+
+document.getElementById("demo8").innerHTML += str.charCodeAt(0);
+</script>
+
+</body>
+</html>

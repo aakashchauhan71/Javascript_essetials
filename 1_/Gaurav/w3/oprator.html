@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <h1>Operator in javascript</h1>
+        <p id=operator></p>
+        <script>
+            var x=10,y=5;
+            { let z=x**y;
+            document.getElementById("operator").innerHTML="Operator power 10**5: "+z + "<br>"+ "<br>"; 
+            }
+
+            z=Math.pow(x,y);
+            document.getElementById("operator").innerHTML+="Operator Math.pow(10,5): "+z + "<br>"+ "<br>";
+             
+                 z=x+y;
+                 document.getElementById("operator").innerHTML+="Operator add 10+5: "+z + "<br>"+ "<br>"; 
+
+                 z=x%y;
+                 document.getElementById("operator").innerHTML+="Operator modulas 10%5: "+z + "<br>"+ "<br>"; 
+             
+                 z=x-y;
+                 document.getElementById("operator").innerHTML+="Operator subtract 10-5: "+z + "<br>"+ "<br>"; 
+
+                 z=x*y;
+                 document.getElementById("operator").innerHTML+="Operator multiply 10*5: "+z + "<br>"+ "<br>"; 
+
+                 z=x/y;
+                 document.getElementById("operator").innerHTML+="Operator divide 10/5: "+z + "<br>"+ "<br>"; 
+
+                 z=x===y;
+                 document.getElementById("operator").innerHTML+="Operator Equal value and type 10===5: "+z + "<br>"+ "<br>"; 
+
+                 z=x==y;
+                 document.getElementById("operator").innerHTML+="Operator Equal 10==5: "+z + "<br>"+ "<br>"; 
+
+                 z=x<<y;
+                 document.getElementById("operator").innerHTML+="Operator fill zero in left side 10<<5: "+z + "<br>"+ "<br>"; 
+             
+                 z=x|y;
+                 document.getElementById("operator").innerHTML+="Operator bitwise or 10|5: "+z + "<br>"+ "<br>";  
+
+                 document.getElementById("operator").innerHTML+="Operator typeof z: "+typeof z + "<br>"+ "<br>";
+   
+        </script>
+    </body>
+</html>

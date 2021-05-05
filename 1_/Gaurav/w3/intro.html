@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<Html>
+    <head>
+        <title>Intro</title>
+    </head>
+    <body>
+        <p>In this case Javascript change the source Images of bulb</p>
+        <p id="demo">JavaScript can change the style of an HTML element.</p>
+        
+        <button onclick ="document.getElementById('image').src='pic_bulbon.gif'">Turn on light</button>
+        <img id="image" src="pic_bulboff.gif" style="width:75px">
+        <button onclick ="document.getElementById('image').src='pic_bulboff.gif'">Turn off light</button>
+        <br><br><br>
+        <button onclick ='document.getElementById("demo").style.fontSize="40px"'>Increase size of font</button>
+        <br><br><br>
+        <button type="button" onclick="document.getElementById('demo').style.display='none'">Click for Hide</button>
+        <button type="button" onclick="document.getElementById('demo').style.display='block'">Click for Show</button>
+    </body>
+</Html>

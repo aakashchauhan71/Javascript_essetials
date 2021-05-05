@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Constant variable</title>
+    </head>
+    <body>
+        <h1>Constant can't be redeclare and its scope is inside the { } brackets</h1>
+        <H1 id=demo></H1>
+        <h2 id = demo1></h2>
+        <script>
+          
+            try{
+             const pi=3.14;
+             pi=300;
+            }
+            catch(err){
+                document.getElementById("demo").innerHTML=err.type;
+            }
+             const Laptop={pc:"HP",model:'2020',color:'white'};
+             Laptop.model=2000;
+             Laptop.color='Black';
+             document.getElementById("demo1").innerHTML=Laptop.pc+Laptop.model+Laptop.color;
+
+        </script>
+
+    </body>
+</html>

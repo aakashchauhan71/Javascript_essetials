@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2>
+
+<h2>slice(2,6) and splice(2,2,"Lemon","Kiwi")</h2>
+<p>The slice() method give starting point to length into a new array</p>
+<p>The splice() method adds new elements to an array, and returns an array with the deleted elements (if any).</p>
+
+<p id="demo4" ></p>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango",'Date','Pineapple'];
+document.getElementById("demo1").innerHTML = "Original Array For splice():<br> " + fruits;
+
+function myFunction() {
+  var removed = fruits.splice(2, 2, "Lemon", "Kiwi"); 
+  document.getElementById("demo2").innerHTML = "New Array:<br>" + fruits;
+  document.getElementById("demo3").innerHTML = "Removed Items:<br> " + removed+"<br>"+'<br>'; 
+}
+
+var alpha = ["Amit", "Bhanu", "Chaman", "Dishu", "Raj",'Faruq','Gagan'];
+var citrus = alpha.slice(2,6);
+document.getElementById("demo4").innerHTML = alpha + "<br><br>" + citrus;
+</script>
+
+</body>
+</html>

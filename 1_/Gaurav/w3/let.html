@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <h2>"let" scope inside the { scope of let }</h2>
+        <h1 id=demo></h1>
+        
+
+<script>
+var  x = 10;
+// var scope is Global. it is window varable.
+{  
+  let x = 2;
+  // let scope inside the block. and it is not a window variable.
+}
+// Here x is 10
+document.getElementById("demo").innerHTML = window.x;    //here var is window variable.
+
+</script>
+
+    
+</body>
+</html>
